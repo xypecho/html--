@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style >
+	.clock{
+		width: 200px;
+		height: 50px;
+		background:black;
+		color:green;
+		border-radius:25px;
+		border:2px solid #a1a1a1;
+		line-height: 50px;
+		text-align: center;
+		font-size: 40px;
+	}
+
+
+
+	</style>
+</head>
+<body>
+	<div class="clock">
+		<span id="sd">10:00:00</span>
+
+	</div>
+
+
+</body>
+	<script >
+		function getDate(){
+			
+		obj=new Date();
+		// year=obj.getFullYear();
+		// month=obj.getMonth();
+		// day=obj.getDate();
+		hour=obj.getHours();
+		if (hour<10) {
+			hour="0"+hour;
+		}
+		minute=obj.getMinutes();
+			if (minute<10) {
+			minute="0"+minute;
+		}
+		second=obj.getSeconds();
+			if (second<10) {
+			second="0"+second;
+		}
+	str=hour+":"+minute+":"+second
+		
+
+
+cobj=document.getElementById("sd");
+cobj.innerHTML=str;
+		}
+	setInterval(function () {
+getDate();
+	
+	},100)
+	
+
+	</script>
+</html>

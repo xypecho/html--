@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+	div{
+	background-color: green;
+	text-align: center;
+	font-size: 40px;
+	}
+
+	</style>
+</head>
+<body>
+	<div><span><span id="so">3</span>秒后跳转到百度首页</span></div>
+</body>
+	<script>
+		s=3;
+		soobj=document.getElementById("so");
+		setInterval(function () {
+			soobj.innerHTML= s--;
+			if (s==0) {
+				window.location.href="https://www.baidu.com/"; 
+			}
+
+
+
+		},1000)
+		
+		// if (s<0) {
+		// 	clearInterval(function () {
+		// 		soobj.innerHTML= s--;
+		
+	
+	</script>
+</html>
