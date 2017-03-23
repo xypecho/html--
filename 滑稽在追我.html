@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		#cg{
+			cursor:pointer;
+			position: absolute;
+			left: 0px;
+			top: 0px;
+			width: 100px;
+			height: 100px;
+			}
+	
+	</style>
+</head>
+<body>
+	<img src="d.jpg" id="cg">
+	
+</body>
+	<script>
+	imgobj=document.getElementById("cg");
+	document.onmousemove=function(event) {
+		x=event.clientX;
+		y=event.clientY;
+		// document.title=x+"-"+y;                  //鼠标移动则更换标题
+		imgobj.style.left=x+"px";
+		imgobj.style.top=y+"px";
+	}
+	</script>
+</html>

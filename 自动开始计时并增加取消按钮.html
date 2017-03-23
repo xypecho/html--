@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<button id="ss" onclick="sd()">点击该按钮显示你失去的1s</button>
+	<input type="text" name=""  id="te" >
+	<button  onclick="window.clearTimeout(flag);">停止计时</button>
+</body>
+	<script type="text/javascript">
+		x=1;
+		obj=document.getElementById("ss");
+		math=document.getElementById("te");
+		function sd() {
+			flag=setTimeout(function time() {
+			x+=1;
+
+		document.getElementById("te").value=x+"s";
+		}, 1000)
+		}
+		
+	
+	//setTimeout()和setInterval()用法一样
+
+	</script>
+</html>

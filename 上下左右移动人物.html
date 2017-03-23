@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		img{
+			cursor: pointer;
+			position: absolute;
+			top: 0px;
+			left: 0px;
+		}
+
+	</style>
+</head>
+<body>
+
+
+	<img src="e.jpg"  id="cg">
+
+</body>
+	<script>
+	imobj=document.getElementById("cg");
+	sx=0;
+	vx=30;
+	sy=0;
+	vy=30;
+	document.onkeydown=function(event) {
+		kc=event.keyCode;
+		document.title=kc;
+		switch (kc){
+			case 38:
+			sy-=vy;
+			imobj.style.top=sy+"px";
+				break;
+			case 40:
+			sy+=vy;
+			imobj.style.top=sy+"px";
+				break;
+			case 37:
+			sx-=vx;
+			imobj.style.left=sx+"px";
+				break;
+			case 39:
+			sx+=vx;
+			imobj.style.left=sx+'px';
+				break;
+		}
+	}
+
+	</script>
+
+
+	
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<form id="om" action="la.php">
+		<p>用户名：</p>
+		<input type="text" name=""  value="">
+		<p>密码：</p>
+		<input type="text" name="" value="">
+		<input type="submit" name="提交">
+		<input type="reset" name="取消">
+
+	</form>
+</body>
+	<script type="text/javascript">
+		omobj=document.getElementById("om");
+		omobj.onsubmit=function(){
+		r=confirm("您确认提交吗？")
+		if (!r) {
+			return false;
+		}
+		}
+	omobj.onreset=function(){
+		r=confirm("您确认清除数据吗？")
+		if (!r) {
+			return false;
+		}
+		}
+
+	</script>
+</html>

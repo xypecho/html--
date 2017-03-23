@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		#cg{
+			cursor:pointer;
+			}
+
+	</style>
+</head>
+<body>
+	<img src="d.jpg" id="cg">
+	
+	<script type="text/javascript">
+	imgobj=document.getElementById("cg");
+	imgobj.onclick=function  () {
+	 arr=["a.jpg","b.jpg","c.jpg","d.jpg"]
+   imgobj.src=arr[Math.ceil(Math.random()*10)];
+		imgobj.style.background="#ccc";
+		imgobj.style.borderRadius="256px";
+	}
+
+	</script>
+</body>
+</html>

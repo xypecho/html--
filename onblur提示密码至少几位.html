@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<form action="">
+	<p>用户名：</p>
+	<input type="text" name=""  id="cl">
+	<p>密码：</p>
+	<input type="text" name=""  id="cb">
+	<input type="submit" name="提交">
+	</form>
+
+</body>
+	<script type="text/javascript">
+	clobj=document.getElementById("cl");
+	cbobj=document.getElementById("cb");
+	cbobj.onblur=function(){
+		val=cbobj.value;
+		if (val.length<6){
+		alert("密码至少6位");
+		}
+	}
+	clobj.onblur=function(){
+		val=clobj.value;
+		if (val.length<6){
+		alert("用户名至少6位");
+		}
+	}
+	
+
+	</script>
+</html>

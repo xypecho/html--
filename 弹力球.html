@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		img{
+			width: 100px;
+			height: 100px;
+			border-radius: 50%;
+			position: absolute;
+			
+		}
+
+	</style>
+</head>
+<body>
+	<img src="ball.jpg"  id="sg">
+
+</body>
+		<script type="text/javascript">
+		ys=0;
+		yv=20;
+		xs=0;
+		xv=20;
+		imgobjheight=100;
+		screenheight=document.documentElement.clientHeight;
+		diffheight=screenheight-imgobjheight;
+
+		imgobjwidth=100;
+		screenwidth=document.documentElement.clientWidth;
+		diffwidth=screenwidth-imgobjwidth;
+
+		imgobj=document.getElementById("sg");
+		setInterval(function(){
+			ys+=yv;
+			if (ys>=diffheight) {
+				ys=diffheight;
+				yv=-yv;
+			} 
+			if (ys<=0) {
+				yv=-yv;
+			}
+			
+		imgobj.style.top=ys+"px";
+		},50)
+
+		setInterval(function(){
+			xs+=xv;
+			if (xs>=diffwidth) {
+				xs=diffwidth;
+				xv=-xv;
+			} 
+			if (xs<=0) {
+				xv=-xv;
+			}
+			
+		imgobj.style.left=xs+"px";
+		},50)
+
+		</script>
+</html>

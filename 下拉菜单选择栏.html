@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+	<title></title>
+</head>
+<body>
+	<select id="s1">
+		<option value="选择城市"  disabled="">选择城市</option>
+		<option value="北京">北京</option>
+		<option  value="上海">上海</option>
+		<option value="广州">广州</option>
+	</select>
+	<h3 >您选择的城市是：<span id="s2">姜堰</span></h3>
+</body>
+	<script type="text/javascript">
+	s1obj=document.getElementById("s1");
+	s2obj=document.getElementById("s2");
+	s1obj.onchange=function(){
+		s1val=s1obj.value;
+		s2obj.innerHTML=s1val;
+	}
+	</script>
+</html>
