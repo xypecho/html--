@@ -4,4 +4,4 @@
 3、animate可以变动标签的css属性   如需变动位置属性需先设置 <b>position</b> 属性设置为 relative、fixed 或 absolute！<br>
 4、animate后面可以加函数，例：$("div").animate({top:"100px"},200,function(){alert(1)});   <br>
 5、表格里面设置属性无需用style；例：<table width="700px" border="1px"
-6、三元运算符，即          a?1:2;          如果a成立则返回1，如果不成立则返回2 <br>
+6、三元运算符，即a?1:2;    如果a成立则返回1，如果不成立则返回2 <br>
