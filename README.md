@@ -11,8 +11,8 @@
 10、vim到末行模式：先到命令模式然后按 ：   末行模式下  x（保存并退出）<br>
 11、圆形图片css    .round{width:100px;height:100px;border-radius:100px} <br>
 12、当jquery里面的“$”函数和其他框架冲突时可以直接使用  jQuery来表示。例：	jQuery("h1").hide();  <br>
-    // $("h1:last").css({"color":"red"});        //最后一行
-// $("h1,p").css({"fontSize":"13px"});    //组合选择器
-// $("div h1").css({"color":"yellow"});        //后代选择器，选择div里面的所有h1标签
-// $(".ft >h1").css({"color":"yellow"});    //子选择器，即class为ft的div里面的h1标签，不包括里面的div里面的h1
-// $("div+h1").css({"color":"yellow"});   //div后面的一个h1标签
+            // $("h1:last").css({"color":"red"});        //最后一行     <br>
+            // $("h1,p").css({"fontSize":"13px"});    //组合选择器        <br>
+            // $("div h1").css({"color":"yellow"});        //后代选择器，选择div里面的所有h1标签 <br>
+            // $(".ft >h1").css({"color":"yellow"});    //子选择器，即class为ft的div里面的h1标签，不包括里面的div里面的h1 <br>
+            // $("div+h1").css({"color":"yellow"});   //div后面的一个h1标签 <br>
