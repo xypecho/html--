@@ -9,4 +9,5 @@
 8、table tr:nth-child(2n){background-color: #ccc} 设置表格逢双数行时样式变动 <br>
 9、vim命令模式到输入模式：i（在前面插入） a（在后面插入） o（换行插入） s（删除当前字符）  大写的iaso即作用于该行<br>
 10、vim到末行模式：先到命令模式然后按 ：   末行模式下  x（保存并退出）<br>
-11、园形图片css    .round{width:100px;height:100px;border-radius:100px} <br>
+11、圆形图片css    .round{width:100px;height:100px;border-radius:100px} <br>
+12、当jquery里面的“$”函数和其他框架冲突时可以直接使用  jQuery来表示。例：	jQuery("h1").hide();  <br>
