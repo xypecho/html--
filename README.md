@@ -1,4 +1,4 @@
-学习途中收藏的一些js代码以及一些个人笔记<br>
+学习途中收藏的一些js代码以及一些个人笔记<br> 
 1、var jq=jQuery.noConflict()，帮助您使用自己的名称（比如 jq）来代替 $ 符号。<br>
 2、$(document).ready(function(){  });     当文档全部加载完运行，防止找不到对象<br>
 3、animate可以变动标签的css属性   如需变动位置属性需先设置 <b>position</b> 属性设置为 relative、fixed 或 absolute！<br>
@@ -15,4 +15,5 @@
             // $("h1,p").css({"fontSize":"13px"});    //组合选择器        <br>
             // $("div h1").css({"color":"yellow"});        //后代选择器，选择div里面的所有h1标签 <br>
             // $(".ft >h1").css({"color":"yellow"});    //子选择器，即class为ft的div里面的h1标签，不包括里面的div里面的h1 <br>
-            // $("div+h1").css({"color":"yellow"});   //div后面的一个h1标签 <br>
+            // $("div+h1").css({"color":"yellow"});   //div后面的一个h1标签 <br>
+<p style="color:red"> hello orld</p>
