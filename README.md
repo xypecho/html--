@@ -1,3 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+            *{
+                       font-family:微软雅黑;
+         }
+
+</style>
+</head>
+<body>
 学习途中收藏的一些js代码以及一些个人笔记<br> 
 ===
 1、var jq=jQuery.noConflict()，帮助您使用自己的名称（比如 jq）来代替 $ 符号。<br>
@@ -26,3 +37,7 @@
             // $("h1:gt(2)").css({"color":"blue"});  //计算机语言里面大于第2个h1标签样式变动<br>
             //$("h1:lt(2)").css({"color":"blue"});  //计算机语言里面小于第2个h1标签样式变动<br>
 13、</fieldset>标签可以设置一个区域的属性 例如<fieldset  disabled>   <br>
+</body>
+</html>
+
+
