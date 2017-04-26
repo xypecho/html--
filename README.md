@@ -25,4 +25,4 @@
             // $("h1:eq(2)").css({"color":"blue"});  //计算机语言里面的第2个h1标签样式变动<br>
             // $("h1:gt(2)").css({"color":"blue"});  //计算机语言里面大于第2个h1标签样式变动<br>
             //$("h1:lt(2)").css({"color":"blue"});  //计算机语言里面小于第2个h1标签样式变动<br>
-            </div>
+13、</fieldset>标签可以设置一个区域的属性 例如<fieldset  disabled>   <br>
