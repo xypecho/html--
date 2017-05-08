@@ -24,7 +24,7 @@
             // $("h1:odd").css({"color":"blue"});      //奇数的h1标签变色,计算器语言序数从0开始<br>
             // $("h1:eq(2)").css({"color":"blue"});  //计算机语言里面的第2个h1标签样式变动<br>
             // $("h1:gt(2)").css({"color":"blue"});  //计算机语言里面大于第2个h1标签样式变动<br>
-            //$("h1:lt(2)").css({"color":"blue"});  //计算机语言里面小于第2个h1标签样式变动<br>
+            //<code>$("h1:lt(2)").css({"color":"blue"});</code>  //计算机语言里面小于第2个h1标签样式变动<br>
 13、 fieldset   标签可以设置一个区域的属性 例如  fieldset  disabled   <br>
 14、划竖线border-right:#4a4a4a solid 1px;                  <br>
 15、<strong>注意，所有插件都依赖 jQuery （也就是说，jQuery必须在所有插件之前引入页面）。</strong> <br>
