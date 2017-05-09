@@ -28,5 +28,6 @@
 13、 fieldset   标签可以设置一个区域的属性 例如  fieldset  disabled   <br>
 14、划竖线border-right:#4a4a4a solid 1px;                  <br>
 15、<strong>注意，所有插件都依赖 jQuery （也就是说，jQuery必须在所有插件之前引入页面）。</strong> <br>
+16、<code><a href="javascript:scroll(0,0)"></a></code>  回到顶部代码 <br>
 
 
