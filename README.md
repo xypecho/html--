@@ -29,5 +29,5 @@
 14、划竖线border-right:#4a4a4a solid 1px;                  <br>
 15、<strong>注意，所有插件都依赖 jQuery （也就是说，jQuery必须在所有插件之前引入页面）。</strong> <br>
 16、<code><a href="javascript:scroll(0,0)"></a></code>  回到顶部代码 <br>
-
+17、1.  内联样式表的权值最高 1000； ID 选择器的权值为 100；3.  Class 类选择器的权值为 10；HTML 标签选择器的权值为 1<br>
 
