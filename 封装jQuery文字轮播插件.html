@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.bootcdn.net/ajax/libs/normalize/8.0.1/normalize.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.js"></script>
+    <style>
+      ul {
+        margin: 0;
+        padding: 0;
+      }
+      .notice-list {
+        height: 100px;
+        background-color: #cccccc;
+        overflow: hidden;
+      }
+      .notice-list li {
+        height: 40px;
+        line-height: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="notice-list">
+      <ul>
+        <li>富强、民主、文明、和谐、自由1</li>
+        <li>富强、民主、文明、和谐、自由2</li>
+        <li>富强、民主、文明、和谐、自由3</li>
+        <li>富强、民主、文明、和谐、自由4</li>
+        <li>富强、民主、文明、和谐、自由5</li>
+        <li>富强、民主、文明、和谐、自由6</li>
+      </ul>
+    </div>
+    <script>
+      (function ($) {
+        $.fn.extend({
+          myScroll: function (options = { time: 1000, speed: 500 }) {
+            var _this = this.eq(0).find("ul:first"), //确保每次只初始化一个
+              wrapperHeight = this.height(), // 容器高度
+              ulHeight = _this.height(), // ul标签内容高度
+              timer = null,
+              lineHeight = _this.find("li:first").height(), //单个li的行高
+              lineNodes = _this.find("li"),
+              time = options.time;
+            if (wrapperHeight >= ulHeight) {
+              return;
+            }
+            var scrollUp = function () {
+              _this.animate(
+                {
+                  marginTop: -lineHeight,
+                },
+                options.speed,
+                function () {
+                  _this.find("li:first").appendTo(_this);
+                  _this.css({ marginTop: 0 });
+                }
+              );
+            };
+            var autoPlay = function () {
+              if (!timer) {
+                timer = setInterval(scrollUp, time);
+              }
+            };
+            var stopPlay = function () {
+              clearInterval(timer);
+              timer = null;
+            };
+            autoPlay();
+            _this.hover(stopPlay, autoPlay);
+          },
+        });
+      })(jQuery);
+
+      $(".notice-list").myScroll({
+        time: 500,
+        speed: 1000,
+      });
+    </script>
+  </body>
+</html>
